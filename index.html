@@ -38,6 +38,7 @@
             border-radius: 10px;
             margin-bottom: 20px;
             font-size: 16px;
+            border: 1px solid #ccc;
         }
 
         button {
@@ -77,17 +78,19 @@
 <body>
 
 <div class="container">
-    <h1> ✨Pide un Deseo </h1>
+    <h1>✨ Pide un Deseo ✨</h1>
     <input type="text" id="deseoinput" placeholder="Escribí tu deseo...">
     <button onclick="cumplirDeseo()">Enviar</button>
     <div class="mensaje" id="mensajedeseo">🎊 TU DESEO SE CUMPLIÓ EXITOSAMENTE 💫</div>
 </div>
 
+<audio id="sonidoMagico" src="https://cdn.pixabay.com/audio/2022/03/15/audio_3abdc501c1.mp3" preload="auto"></audio>
+
 <script>
     function cumplirDeseo() {
         const input = document.getElementById('deseoinput');
         const mensaje = document.getElementById('mensajedeseo');
-        const sonidoç0 document.getElementById('SonidoMagico');
+        const sonido = document.getElementById('sonidoMagico');
 
         if (input.value.trim() !== "") {
             sonido.play();
@@ -99,7 +102,6 @@
         }
     }
 </script>
-<audio id="sonidoMagico" src="https://cdn.pixabay.com/audio/2022/03/15/audio_3abdc501c1.mp3" preload="auto"></audio>
+
 </body>
 </html>
-
