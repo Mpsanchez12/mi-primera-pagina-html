@@ -87,8 +87,10 @@
     function cumplirDeseo() {
         const input = document.getElementById('deseoinput');
         const mensaje = document.getElementById('mensajedeseo');
+        const sonidoç0 document.getElementById('SonidoMagico');
 
         if (input.value.trim() !== "") {
+            sonido.play();
             mensaje.style.display = 'block';
             input.disabled = true;
             input.value = "";
@@ -97,7 +99,7 @@
         }
     }
 </script>
-
+<audio id="sonidoMagico" src="https://cdn.pixabay.com/audio/2022/03/15/audio_3abdc501c1.mp3" preload="auto"></audio>
 </body>
 </html>
 
